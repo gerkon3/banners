@@ -1,0 +1,41 @@
+//common settings
+
+.banners__title{
+	font-family: $ProximaRegular;
+	font-size: 40px;
+	font-weight: 400;
+	margin: 0;
+	padding-top: 25px;
+	padding-bottom: 6px;
+	@media (max-width: 1199px){
+		text-align: center;
+	}
+}
+
+//grid settings
+
+.banners__container{
+	max-width: 1200px;
+	margin: 0 auto;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+.banners__row{
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -15px;
+}
+.banners__col{
+	margin: 15px;
+	box-sizing: border-box;
+	&--center{
+		display: flex;
+		justify-content: center;
+	}
+}
+.col-6{
+	width: calc(100% / 12 * 6 - 30px);
+}
+.col-12{
+	width: calc(100% / 12 * 12 - 30px);
+}

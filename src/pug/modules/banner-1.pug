@@ -1,0 +1,19 @@
+.banner-1
+	.banner-1__content
+		.banner-1__image-block
+			a(href="https://bandaumnikov.ru/product/reshi-pishi-kubometria-3d" class="banner-1__image-wrap")
+				img(src="img/game-cover.png" class="banner-1__image")
+			map(name="banner-1__game-gift-map" id="banner-1__game-gift-map")
+				area(href="https://bandaumnikov.ru/product/reshi-pishi-kubometria-3d" shape="poly" coords="42,118,106,89,101,75,102,70,98,67,67,1,1,30,20,74,16,79,20,86,24,87")
+			img(src="img/game-gift.png" class="banner-1__gift-image" usemap="#banner-1__game-gift-map")
+		.banner-1__text-block
+			h2.banner-1__title Предзаказ тетради «Кубометрия 3D»
+				p.banner-1__text Акция заканчивается 14 апреля. Через:
+			.timer.banner-1__timer
+				for timerId in timerIdList
+					+timerIds(timerId)
+			.banner-1__price-btn-block
+				.banner-1__price
+					p.banner-1__new-price.banner-1__new-price--pink 9 999 &#8381;
+					span.banner-1__old-price 9 999 &#8381;
+				a(href="https://bandaumnikov.ru/product/reshi-pishi-kubometria-3d").btn.banner-1__btn.btn--pink ПОДРОБНЕЕ

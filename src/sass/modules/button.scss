@@ -1,0 +1,23 @@
+.btn{
+	width: 142px;
+	height: 43px;
+	font-family: $ProximaBold;
+	font-weight: 700;
+	font-size: 18px;
+	box-shadow: 1.3px 1.3px 1px rgba(0, 0, 0, 0.4);
+	outline: 0;
+	text-decoration: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	&:hover{
+		box-shadow: 1.5px 1.5px 1px rgba(0, 0, 0, 0.4);
+	}
+	&--pink{
+		color: $white;
+		background-color: $pink;
+		&:hover{
+			background-color:lighten($pink,10%);
+		}
+	}
+}

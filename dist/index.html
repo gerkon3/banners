@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://bandaumnikov.ru/favicons/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://bandaumnikov.ru/favicons/favicon-32x32.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Баннеры</title>
+  </head>
+  <body class="banners">
+    <div class="banners__container">
+      <h1 class="banners__title">Акции и специальные предложения</h1>
+      <div class="banners__row" id="bannersApp">
+        <div class="banners__col col-6" :class="{'col-12 banners__col--center': isActive}">
+          <div class="banner-1">
+            <div class="banner-1__content">
+              <div class="banner-1__image-block"><a class="banner-1__image-wrap" href="https://bandaumnikov.ru/product/reshi-pishi-kubometria-3d"><img class="banner-1__image" src="img/game-cover.png"></a><map name="banner-1__game-gift-map" id="banner-1__game-gift-map">
+                  <area href="https://bandaumnikov.ru/product/reshi-pishi-kubometria-3d" shape="poly" coords="42,118,106,89,101,75,102,70,98,67,67,1,1,30,20,74,16,79,20,86,24,87"></map><img class="banner-1__gift-image" src="img/game-gift.png" usemap="#banner-1__game-gift-map"></div>
+              <div class="banner-1__text-block">
+                <h2 class="banner-1__title">Предзаказ тетради «Кубометрия 3D»
+                  <p class="banner-1__text">Акция заканчивается 14 апреля. Через:</p>
+                </h2>
+                <div class="timer banner-1__timer">
+                  <div class="timer__item banner-1__timer-item"><span class="timer__numbers banner-1__timer-numbers" id="timer-hours-number"></span><span class="timer__text banner-1__timer-text" id="timer-hours-text"></span></div>
+                  <div class="timer__item banner-1__timer-item"><span class="timer__numbers banner-1__timer-numbers" id="timer-minutes-number"></span><span class="timer__text banner-1__timer-text" id="timer-minutes-text"></span></div>
+                  <div class="timer__item banner-1__timer-item"><span class="timer__numbers banner-1__timer-numbers" id="timer-seconds-number"></span><span class="timer__text banner-1__timer-text" id="timer-seconds-text"></span></div>
+                </div>
+                <div class="banner-1__price-btn-block">
+                  <div class="banner-1__price">
+                    <p class="banner-1__new-price banner-1__new-price--pink">9 999 &#8381;</p><span class="banner-1__old-price">9 999 &#8381;</span>
+                  </div><a class="btn banner-1__btn btn--pink" href="https://bandaumnikov.ru/product/reshi-pishi-kubometria-3d">ПОДРОБНЕЕ</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="banners__col col-6" :class="{'col-12 banners__col--center': isActive}">
+          <div class="banner-2 banners__banner-2"><a class="banner-2__image-wrap" href="https://bandaumnikov.ru/product/zverobukvy-english"><img class="banner-2__image" src="../img/banner-2_bg.png"></a><a class="btn banner-2__btn btn--pink" href="https://bandaumnikov.ru/product/zverobukvy-english">ПОДРОБНЕЕ</a></div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

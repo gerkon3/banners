@@ -1,0 +1,9 @@
+.timer{
+	display: flex;
+	&__item{
+		text-align: center;
+	}
+	&__text{
+		display: block;
+	}
+}

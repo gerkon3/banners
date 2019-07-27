@@ -1,0 +1,22 @@
+//- banner-1
+
+-
+	var timerIdList = [
+		{
+			timerNumbersId: "timer-hours-number",
+			timerTextId: "timer-hours-text"
+		},
+		{
+			timerNumbersId: "timer-minutes-number",
+			timerTextId: "timer-minutes-text"
+		},
+		{
+			timerNumbersId: "timer-seconds-number",
+			timerTextId: "timer-seconds-text"
+		}
+	];
+
+mixin timerIds(timerId)
+	.timer__item.banner-1__timer-item
+		span.timer__numbers.banner-1__timer-numbers(id=timerId.timerNumbersId)
+		span.timer__text.banner-1__timer-text(id=timerId.timerTextId)

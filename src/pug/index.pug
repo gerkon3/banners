@@ -1,0 +1,11 @@
+extends templates/main
+block title
+	title Баннеры
+block content
+	.banners__container
+		h1.banners__title Акции и специальные предложения
+		.banners__row#bannersApp
+			.banners__col.col-6(:class="{'col-12 banners__col--center': isActive}")
+				include modules/banner-1
+			.banners__col.col-6(:class="{'col-12 banners__col--center': isActive}")
+				include modules/banner-2

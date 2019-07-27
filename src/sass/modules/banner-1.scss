@@ -1,0 +1,145 @@
+.banner-1{
+	max-width: 566px;
+	background-image: url(../../img/banner-1_bg.png);
+	box-sizing: border-box;
+	@media (max-width: 604px){
+		text-align: center;
+	}
+	&__content{
+		display: flex;
+		flex-wrap: wrap;
+		padding: 0 15px;
+		@media (max-width: 612px){
+			padding-bottom: 15px;
+		}
+	}
+	&__image-block{
+		position: relative;
+		height: 294px;
+		@media (max-width: 612px){
+			margin: 0 auto;
+		}
+	}
+	&__image-wrap{
+		display: block;
+		margin: 12px 42px 13px 0;
+	}
+	&__gift-image{
+		position: absolute;
+		top: 3px;
+		right: 0;
+		transition: 0.2s ease;
+	}
+	&__text-block{
+		flex: 1;
+	}
+	&__title{
+		font-family: $ProximaBold;
+		font-size: 30px;
+		margin: 0;
+		padding-top: 15px;
+		line-height: 1.2;
+	}
+	&__text{
+		font-family: $ProximaBold;
+		font-size: 16px;
+		padding-top: 8px;
+		margin: 0;
+	}
+	&__timer{
+		padding-top: 13px;
+		@media (max-width: 359px){
+			justify-content: space-between;
+		}
+		@media (min-width: 360px) and (max-width: 612px){
+			justify-content: center;
+		}
+	}
+	&__timer-item:nth-of-type(2){
+		margin: 0 25px;
+		@media (max-width: 359px){
+			margin: 0;
+		}
+	}
+	&__timer-numbers{
+		font-family: $UmnikBold;
+		font-size: 55px;
+		letter-spacing: 10px;
+		position: relative;
+		padding-left: 8px;
+		display: block;
+		width: 80px;
+		height: 55px;
+		background-color: $white;
+		border-radius: 5px;
+		box-sizing: border-box;
+		&:before{
+			position: absolute;
+			content: "";
+			width: 2px;
+			height: 55px;
+			border: 2px dashed $darkYellow;
+			left: 39px;
+			box-sizing: border-box;
+		}
+	}
+	&__timer-text{
+		font-family: $ProximaBold;
+		font-size: 16px;
+		padding-top: 6px;
+	}
+	&__price-btn-block{
+		display: flex;
+		@media (max-width: 359px){
+			display: block;
+		}
+		@media (min-width: 360px) and (max-width: 612px){
+			justify-content: center;
+		}
+	}
+	&__price{
+		padding-top: 12px;
+	}
+	&__new-price{
+		font-family: $ProximaBold;
+		font-size: 31px;
+		font-weight: 700;
+		margin: 0 0 1px;
+		white-space: nowrap;
+		&--pink{
+			color: $pink;
+		}
+	}
+	&__old-price{
+		position: relative;
+		font-family: $ProximaBold;
+		font-size: 16px;
+		font-weight: 700;
+		margin-left: 5px;
+		@media (max-width: 604px){
+			margin-left: 0;
+		}
+		&:before{
+			border-bottom: 2px solid $pink;
+			position: absolute;
+			left: -4px;
+			bottom: 10px;
+			content: "";
+			width: 65px;
+			transform: rotate(6deg);
+		}
+	}
+	&__btn{
+		margin-top: 21px;
+		margin-left: 38px;
+		@media (max-width: 359px){
+			margin-left: 0;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+}
+#banner-1__game-gift-map:hover + .banner-1__gift-image{
+	transform: rotate(10deg) scale(1.05);
+	transition: 200ms linear all;
+}
