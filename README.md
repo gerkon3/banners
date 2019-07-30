@@ -1,2 +1,2 @@
 # banners
-dynamic banners
+Dynamic banners
